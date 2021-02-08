@@ -1,0 +1,952 @@
+*{
+  box-sizing: border-box;
+  color :white;
+
+}
+.navbars{
+width: 0% !important;
+
+}
+
+.footerbar{
+width: 100% !important;
+}
+.centerf{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  position: relative;
+  left: 10px;
+}
+.dashContainer{
+  /* display: flex; */
+  width: 100%;
+  background-color:#00968b;
+  /* align-content: center; */
+}
+.buttonContainer{
+  margin: 0;
+  display: flex;
+  width: 40%;
+  /* background-color:red; */
+  justify-content: space-between;
+
+align-items: center;
+  height: 100px;
+
+}
+
+.dashboard,.parent,.teacher,.student,.admin:hover{
+  cursor: pointer;
+
+}
+.dashboard{
+  /* margin-top: 10px; */
+  margin-left: 10px;
+}
+
+
+.navbarc{
+
+  width: 100%;
+  display:flex
+}
+.item1{
+  width: 100%;
+}
+.navbars{
+width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #00968b;
+  
+  bottom: 0;
+}
+
+.footerbar{
+  margin: 0;
+  box-sizing: border-box;
+  background-color:#00968b;
+  width:100%;
+  height: 80px;
+  position: absolute;
+  top: 602px;
+  /* margin-left: 1% !important; */
+}
+
+.downnavbar{
+  display: flex;
+  width: 95%;
+  height: 100%;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  flex-wrap: wrap;
+  overflow:hidden;
+
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.redbutton{
+  width: 50%;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+}
+.redbutton:hover{
+  width:200px;
+  background-color:#ef6a57;
+
+  /* opacity: 0.8; */
+  /* margin-top: 5px; */
+  cursor: pointer;
+height: 100%
+}
+
+.dashh{
+  width: 50%;
+}
+.teacherh{
+  width:90%
+}
+.studenth{
+  width:80%
+}
+.parentsh{
+  width:90%
+}
+.adminh{
+  width:100%
+
+}
+.logouth{
+  width:20px
+}
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  /* CSS */
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  /* CSS */
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media screen and (max-width: 1024px) {
+
+  .footerbar{
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#00968b;
+    width:99%;
+    height: 80px;
+    position: absolute;
+    top: 1360px;
+    bottom: 0;
+  }
+
+  .downnavbar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+
+
+  }
+
+
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+.navbars{
+  width: 100% !important;
+  margin:0 !important;
+  background-color: blue !important;
+}
+  /* CSS */
+  *{
+    font-size: 11px !important;
+
+  }
+  .dashh{
+    width: 35%;
+  }
+  .teacherh{
+    width:60%
+  }
+  .studenth{
+    width:60%;
+    position: relative;
+    left: 5px;
+  }
+  .parentsh{
+    width:60%
+  }
+  .adminh{
+    width:90%
+
+  }
+  .logouth{
+    width:20px
+  }
+  /*
+
+
+  /* CSS */
+
+  .centerf{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 3px;
+  }
+  .dashContainer{
+    /* display: flex; */
+    width: 100%;
+    background-color:blue;
+    /* align-content: center; */
+  }
+  .buttonContainer{
+    margin: 0;
+    display: flex;
+    width: 40%;
+    /* background-color:red; */
+    justify-content: space-between;
+
+  align-items: center;
+    height: 70px;
+
+  }
+
+  .dashboard,.parent,.teacher,.student,.admin:hover{
+    cursor: pointer;
+
+  }
+  .dashboard{
+    /* margin-top: 10px; */
+    margin-left: 10px;
+  }
+
+
+  .navbarc{
+
+    width: 100%;
+    display:flex
+  }
+  .item1{
+    width: 100%;
+  }
+
+  /* 768px ...  */
+  .navbars{
+
+    width: 10%;
+height: 70px;
+    position: relative;
+
+   margin-left: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #00968b;
+bottom: 0;
+  }
+
+  .footerbar{
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#00968b;
+    width:99%;
+    height: 80px;
+    position: absolute;
+    top: 950px;
+    bottom: 0;
+  }
+
+  .downnavbar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+
+
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .redbutton{
+    width: 40%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  .redbutton:hover{
+    width:42%;
+    background-color:#ef6a57;
+
+    /* opacity: 0.8; */
+    /* margin-top: 5px; */
+    cursor: pointer;
+  height: 100%
+  }
+
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  /* CSS */
+
+
+/* CSS */
+*{
+  font-size: 11px !important;
+
+}
+.dashh{
+  width: 35%;
+}
+.teacherh{
+  width:60%
+}
+.studenth{
+  width:60%;
+  position: relative;
+  left: 5px;
+}
+.parentsh{
+  width:60%
+}
+.adminh{
+  width:90%
+
+}
+.logouth{
+  width:20px
+}
+/*
+
+
+/* CSS */
+
+.centerf{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  position: relative;
+  left: 3px;
+}
+.dashContainer{
+  /* display: flex; */
+  width: 100%;
+  background-color:blue;
+  /* align-content: center; */
+}
+.buttonContainer{
+  margin: 0;
+  display: flex;
+  width: 40%;
+  /* background-color:red; */
+  justify-content: space-between;
+
+align-items: center;
+  height: 70px;
+
+}
+
+.dashboard,.parent,.teacher,.student,.admin:hover{
+  cursor: pointer;
+
+}
+.dashboard{
+  /* margin-top: 10px; */
+  margin-left: 10px;
+}
+
+
+.navbarc{
+
+  width: 100%;
+  display:flex
+}
+.item1{
+  width: 100%;
+}
+
+/* 768px ...  */
+.navbars{
+
+  width: 0%;
+height: 70px;
+  position: relative;
+
+ margin-left: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #00968b;
+bottom: 0;
+}
+
+.footerbar{
+  margin: 0;
+  box-sizing: border-box;
+  background-color:#00968b;
+  width:99%;
+  height: 80px;
+  position: absolute;
+  top: 1000px;
+  bottom: 0;
+}
+
+.downnavbar{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  flex-wrap: wrap;
+  overflow:hidden;
+
+
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.redbutton{
+  width: 40%;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+}
+.redbutton:hover{
+  width:42%;
+  background-color:#ef6a57;
+
+  /* opacity: 0.8; */
+  /* margin-top: 5px; */
+  cursor: pointer;
+height: 100%
+}
+
+
+
+
+
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbars{
+    width: 100% !important;
+    margin-left:-15% !important;
+    background-color: red !important;
+  }
+  /* CSS */
+  *{
+    /* font-size: 11px !important; */
+
+  }
+
+  .dashh{
+    width: 35%;
+  }
+  .teacherh{
+    width:60%
+  }
+  .studenth{
+    width:60%;
+    position: relative;
+    left: 5px;
+  }
+  .parentsh{
+    width:60%
+  }
+  .adminh{
+    width:90%
+
+  }
+  .logouth{
+    width:20px
+  }
+  /*
+
+
+  /* CSS */
+
+  .centerf{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 3px;
+  }
+  .dashContainer{
+    margin: 0;
+    /* display: flex; */
+    width: 100%;
+    background-color:red;
+    /* align-content: center; */
+  }
+  .buttonContainer{
+    margin: 0;
+    display: flex;
+    width: 40%;
+    /* background-color:red; */
+    justify-content: space-between;
+
+  align-items: center;
+    height: 70px;
+
+  }
+
+  .dashboard,.parent,.teacher,.student,.admin:hover{
+    cursor: pointer;
+
+  }
+  .dashboard{
+    /* margin-top: 10px; */
+    margin-left: 10px;
+  }
+
+
+  .navbarc{
+
+    width: 100%;
+    display:flex
+  }
+  .item1{
+    width: 100%;
+  }
+  .navbars {
+
+    width: 0%;
+height: 70px;
+    position: relative;
+    margin-left: 10px;
+   margin-left: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: red;
+
+  }
+
+  .footerbar{
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#00968b;
+    width:99%;
+    height: 80px;
+    position: absolute;
+    top: 700px;
+  }
+
+  .downnavbar{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .redbutton{
+    width: 40%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  .redbutton:hover{
+    width:42%;
+    background-color:#ef6a57;
+
+    /* opacity: 0.8; */
+    /* margin-top: 5px; */
+    cursor: pointer;
+  height: 100%
+  }
+
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:319px){
+
+  *{
+    font-size: 9px !important;
+
+  }
+  .dashh{
+    width: 35%;
+  }
+  .teacherh{
+    width:60%
+  }
+  .studenth{
+    width:60%;
+    position: relative;
+    left: 5px;
+  }
+  .parentsh{
+    width:60%
+  }
+  .adminh{
+    width:90%
+
+  }
+  .logouth{
+    width:15px;
+    position: relative;
+
+  }
+  /*
+
+
+  /* CSS */
+
+  .centerf{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 5px;
+  }
+  .dashContainer{
+    /* display: flex; */
+    width: 100%;
+    background-color:red;
+    /* align-content: center; */
+  }
+  .buttonContainer{
+    margin: 0;
+    display: flex;
+    width: 40%;
+    /* background-color:red; */
+    justify-content: space-between;
+
+  align-items: center;
+    height: 70px;
+
+  }
+
+  .dashboard,.parent,.teacher,.student,.admin:hover{
+    cursor: pointer;
+
+  }
+  .dashboard{
+    /* margin-top: 10px; */
+    margin-left: 10px;
+  }
+
+
+  .navbarc{
+
+    width: 100%;
+    display:flex
+  }
+  .item1{
+    width: 100%;
+  }
+
+.navbars {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: red;
+    height: 70px;
+    bottom: 0;
+}
+
+
+  .navbars{
+
+    /* width: 0%;
+height: 70px;
+    position: relative;
+    /* margin-left: 10px; */
+ /* left: 12%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #00968b; */
+    /* position: absolute; */
+    bottom: 0;
+
+  }
+
+  .footerbar{
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#00968b;
+    width:99%;
+    height: 80px;
+    position: absolute;
+    top: 602px;
+  }
+
+  .downnavbar{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .redbutton{
+    width: 40%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  .redbutton:hover{
+    width:42%;
+    background-color:#ef6a57;
+
+    /* opacity: 0.8; */
+    /* margin-top: 5px; */
+    cursor: pointer;
+  height: 100%
+  }
+
+
+
+
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+.navbarc{
+width: 100%;
+margin-left: -2% !important;
+}
+  .navbars{
+    width: 100% !important;
+    margin-left:-20% !important;
+    background-color: blue !important;
+  }
+
+  *{
+    font-size: 11px !important;
+
+  }
+  .dashh{
+    width: 35%;
+  }
+  .teacherh{
+    width:60%
+  }
+  .studenth{
+    width:60%;
+    position: relative;
+    left: 5px;
+  }
+  .parentsh{
+    width:60%
+  }
+  .adminh{
+    width:90%
+
+  }
+  .logouth{
+    width:20px
+  }
+  /*
+
+
+  /* CSS */
+
+  .centerf{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 3px;
+  }
+  .dashContainer{
+    /* display: flex; */
+    width: 100%;
+    background-color:red;
+    /* align-content: center; */
+  }
+  .buttonContainer{
+    margin: 0;
+    display: flex;
+    width: 40%;
+    /* background-color:red; */
+    justify-content: space-between;
+
+  align-items: center;
+    height: 70px;
+
+  }
+
+  .dashboard,.parent,.teacher,.student,.admin:hover{
+    cursor: pointer;
+
+  }
+  .dashboard{
+    /* margin-top: 10px; */
+    margin-left: 10px;
+  }
+
+
+  .navbarc{
+
+    width: 100%;
+    display:flex
+  }
+  .item1{
+    width: 100%;
+  }
+  .navbars{
+
+
+height: 70px;
+width: 15px;
+    position: relative;
+
+    justify-content: flex-end;
+    align-items: center;
+    background-color:red !important;
+
+  }
+
+  .footerbar{
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#00968b;
+    width:100%;
+    height: 80px;
+    position: absolute;
+    top:780px;
+    margin: 0;
+  }
+
+  .downnavbar{
+    display: flex;
+    width: 100% !important;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    flex-wrap: wrap;
+    overflow:hidden;
+
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .redbutton{
+    width: 40%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  .redbutton:hover{
+    width:42%;
+    background-color:#ef6a57;
+
+    /* opacity: 0.8; */
+    /* margin-top: 5px; */
+    cursor: pointer;
+  height: 100%
+  }
+}

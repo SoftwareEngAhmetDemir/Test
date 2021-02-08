@@ -1,0 +1,154 @@
+.contactsDetails {
+  display: grid;
+  grid-template-columns: 5% 20% 5% 20% 5% 20% 5% 20% ;
+  /* background-color: #2196F3; */
+ grid-template-rows: 70px;
+
+ align-content: center;
+}
+
+.imga{
+  height: 100%;
+  width: 100% !important;
+}
+.contactsDetails .images {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+
+
+  text-align: center;
+
+}
+
+.contactsDetails .text
+{padding-left: 2%;
+  display: flex;
+  align-items: flex-end;
+  font-size: 100%;
+}
+.textc{
+  width: 10%;
+}
+*{
+  font-size: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.textform{
+  display: grid;
+  grid-template-columns: 8% 45%;
+  /* background-color: #2196F3; */
+  /* border: 1px solid black; */
+  grid-gap: 4px;
+  grid-template-rows: 30px 30px 30px;
+}
+.textform .item1{
+display:flex;
+align-items: center;
+justify-content: flex-start;
+/* border: 1px solid black; */
+font-size: 100%;
+}
+
+.textform .item2{
+  display:flex;
+align-items: center;
+justify-content: flex-start;
+/* border: 1px solid black; */
+}
+
+.textboxc{
+  height: 150px;
+}
+
+.sendbutton{
+  width:10%
+}
+
+@media (min-width:200px) and(max-width:450px)
+{
+
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .sendbutton{
+    width:20%;
+
+    margin-left: 10%;
+  }
+
+  .textform{
+    margin-left: 8%;
+    display: block;
+width: 45%;
+grid-gap: 10px;
+
+      }
+      .textform input[type="text"]{
+        width: 10%;
+margin-top: 5px;
+      }
+      .textform .item1{
+        display: none;
+      }
+
+      .textform .item2{
+        font-size: 70%;
+
+              }
+  .textc{
+    width: 30%;
+  }
+
+
+
+  *{
+    font-size: 85%;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+
+  .contactsDetails {
+
+    grid-template-columns:10% 50% !important;
+    grid-template-rows:auto;
+    grid-gap: 10px;
+  }
+
+
+}
+@media (min-width: 501px) and (max-width: 880px) {
+  .sendbutton{
+    width:"3%";
+    margin-left: 8%;
+  }
+  .textform .item1{
+    display: none;
+  }
+
+  .textform{
+    display: block;
+    grid-template-rows: 10px 10px 10px;
+      }
+
+
+          .textform .item2{
+            font-size: 100%;
+            width: 45%;
+            margin-left: 8%;
+            margin-top: 1%;
+                  }
+.contactsDetails {
+
+    grid-template-columns:8% 40%  8% 40% !important;
+    grid-template-rows:auto auto;
+    grid-gap: 10px;
+  }
+
+}

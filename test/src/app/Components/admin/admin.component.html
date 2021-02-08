@@ -1,0 +1,106 @@
+<h3 style="color: green;">| Admin</h3>
+
+<div id="tab" *ngIf="adminp else loading">
+<app-table [obj]="adminp" [deleteserve]="'removeuser'" ></app-table>
+</div>
+<ng-template #loading>
+  <h1 style="margin: 200px;">Loading...</h1>
+</ng-template>
+<div (click)="add()" style="cursor: pointer;" >
+  <img src="assets/images/admin/add.png" alt="" class="addbuttonc">
+</div>
+
+
+<fieldset *ngIf= "open">
+  <legend>Add Admin</legend>
+
+<div class="firstcontainer">
+<div class="items">
+  <div class="verticalyc">
+  <div class="secondgrid">
+    <fieldset style="border:none;width: 100%;">
+      <legend class="usernamec">User Name</legend>
+  <div class="item1">
+
+    <input type="text" name="" id="" [(ngModel)]="username" class="usernameinp">
+
+  </div>
+</fieldset>
+<fieldset style="border:none">
+  <legend class="usernamec">Phone Number</legend>
+<div class="item2">
+
+<input type="text" name="" id="" [(ngModel)]="phone">
+
+</div>
+</fieldset>
+<fieldset style="border:none">
+  <legend class="usernamec">First Name</legend>
+<div class="item3">
+
+<input type="text" name="" id="" [(ngModel)]="firstname">
+</div>
+</fieldset>
+<fieldset style="border:none">
+  <legend class="usernamec">Password</legend>
+<div class="item4">
+
+<input type="text" name="" id="" [(ngModel)]="pass">
+
+</div>
+</fieldset>
+<fieldset style="border:none">
+  <legend class="usernamec">Email</legend>
+<div class="item5">
+
+<input type="text" name="" id="" [(ngModel)]="email">
+
+</div>
+</fieldset>
+<fieldset style="border:none">
+  <legend class="usernamec">Last Name</legend>
+<div class="item1">
+
+<input type="text" name="" id="" [(ngModel)]="lastname">
+
+</div>
+</fieldset>
+<fieldset style="border:none">
+  <legend class="usernamec" >Confirm Password</legend>
+<div>
+
+<input type="text" name="" id="" [(ngModel)]="confirmpass">
+
+</div>
+</fieldset>
+<fieldset style="border:none">
+  <legend class="usernamec">Adress</legend>
+<div>
+
+<input type="text" name="" id="" [(ngModel)]="adress">
+
+</div>
+</fieldset>
+</div>
+</div>
+</div>
+
+<div class="items">
+
+  <div class="rightcontainer">
+    <div class="item1">
+      <img src="assets/images/admin/adminicon.png" alt="" class="adminicon" height="auto">
+    </div>
+    <div class="item2">
+      <img src="assets/images/admin/save.png" alt=""
+       (click)="savef()" style="cursor: pointer;"  class="saveandcancelbutton" height="auto">
+       <span style="width: 8%;"></span>
+      <img src="assets/images/admin/cancel.png" alt="" (click)="cancelf()"
+      style="cursor: pointer;"  class="saveandcancelbutton" height="auto">
+    </div>
+  </div>
+</div>
+</div>
+
+
+</fieldset>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+  <h3 style="color: green;"><span>|</span> Parent</h3>
+
+  <div id="tab" style="height: 150px;overflow: auto;">
+
+
+
+<div style="width:60%" *ngIf="parentsp else loading">
+  <app-table [obj]="parentsp" [deleteserve]="'deleteParent'" ></app-table>
+</div>
+
+
+<ng-template #loading>
+  <h1 style="margin: auto;">Loading...</h1>
+</ng-template>
+
+  </div>
+
+  <br>
+  <div>
+    <img src="assets/images/parents/add.png" alt="" height="30px" class="addbtn" (click)="addf()">
+  </div>
+
+  <fieldset class="formc" *ngIf="addb">
+
+      <legend style="color:black;">Add Parent</legend>
+  <div class="container">
+  <div class="item1"></div>
+
+  <div class="item2 cen">
+    <fieldset style="border:none;text-align:left">
+      <legend style="color:black">First Name</legend>
+    <input type="text" name="a" id="a" [(ngModel)]="firstname">
+  </fieldset>
+  </div>
+  <div class="item3  cen">
+    <fieldset style="border:none;text-align:left">
+      <legend style="color:black">Last Name</legend>
+    <input type="text" name="b8" id="b" [(ngModel)]="lastname">
+    </fieldset>
+  </div>
+  <div class="item4  cen" >
+    <fieldset style="border:none;text-align:left">
+      <legend style="color: black;">Phone Number</legend>
+    <input type="text" name="c" id="c" [(ngModel)]="phone">
+    </fieldset>
+  </div>
+  <div class="item5  cen">
+    <fieldset style="border:none;text-align:left">
+      <legend style="color: black;" >Adress</legend>
+    <input type="text" name="d" id="d" [(ngModel)]="adress">
+    </fieldset>
+  </div>
+  <div class="itemson"></div>
+  <div class="asidec">
+
+      <div class="containerB">
+        <div class="item11">
+          <img src="assets/images/parents/1.png" alt="" class="icon" height="auto">
+        </div>
+        <div class="item22" style="padding: 10px;">
+
+  <img src="assets/images/parents/save.png" alt="" class="savebtn" (click)="savef()"> <span style="width: 5%;" ></span>
+  <img src="assets/images/parents/cancel.png" alt="" class="cancelbtn" (click)="cancelf()">
+        </div>
+
+    </div>
+  </div>
+  </div>
+  <div class="fieldempty" *ngIf="emptyb">All Fields are important</div>
+  <div class="successsaved" *ngIf="savedb">Your Data are added</div>
+    </fieldset>
+
+
+</body>
+</html>
+

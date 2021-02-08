@@ -1,0 +1,54 @@
+<style>
+  .green{
+    color:rgba(17, 133, 17);
+    font-weight: bold;
+  }
+  .alertmsg{
+    background-color: red;
+    opacity: 0.75;
+    font-weight: bold;
+    color: white;
+  }
+</style>
+
+<div class="containerA">
+  <figure>
+    <img  src="/assets/images/Login/1.png"  class="grid-item grid-itemimg"/>
+    <!-- <figcaption >Login To Your Account</figcaption> -->
+  </figure>
+
+</div>
+
+<div class="form">
+
+<div class="controluser">
+
+  <div>
+    <h3 class="green">Enter Your User Name And Password</h3>
+    <label class="green" for="username" id="usertext">User Name</label>
+<input [(ngModel)]="username" type="text" name="" id="user" placeholder="Enter User Name">
+<div class="alertmsg" *ngIf="userempty">User Name Empty!!! </div>
+<div  class="alertmsg" *ngIf="usererror">There is no user name for this user!!! </div>
+</div>
+</div>
+<div class="break"></div> <!-- break -->
+<div class="controlpass">
+  <div class="passwordblock">
+  <label for="Username" class="green">Password</label>
+<input [(ngModel)]="password" type="password" name="" id="pass" placeholder="Enter Your Password">
+<div *ngIf="passwordempty"  class="alertmsg">Password Empty!!! </div>
+</div>
+</div>
+<div class="break"></div> <!-- break -->
+<div class="buttonc">
+
+<img src="/assets/images/Login/loginbutton.png"  (click)="login()" class="buttonimg"/>
+
+
+</div>
+<div *ngIf="passorusererror"  class="alertmsg">Password Error !!!!</div>
+</div>
+
+
+
+<!-- <button (click)="deneme()">+++</button> -->

@@ -1,0 +1,57 @@
+*{
+  border-collapse: collapse;
+margin: 0;
+}
+#tab{
+ height: 150px;
+ overflow: auto;
+}
+#tab::-webkit-scrollbar {
+width: 5px;
+height: 2px;         /* width of the entire scrollbar */
+}
+.buttonimg{
+  width:60%;
+
+  transition: all 0.3s;
+}
+.buttonimg:hover{
+cursor: pointer;
+width:55% ;
+
+}
+#tab tr{
+font-weight: 100px;
+transition: all 1s;
+}
+#tab tr:hover{
+background-color: rgba(177, 100, 100, 0.658);
+font-weight: bolder;
+}
+#tab::-webkit-scrollbar-track {
+background: orange;
+opacity: 0.3;     /* color of the tracking area */
+}
+
+#tab::-webkit-scrollbar-thumb {
+background-color: rgb(65, 65, 82);    /* color of the scroll thumb */
+border-radius: 10px;       /* roundness of the scroll thumb */
+height: 2px;
+}
+
+#tab table,td,th{
+border: 1px solid #b2dfdb;
+border-collapse: collapse;
+color: rgb(30, 63, 30);
+}
+th{
+  background-color: #b2dfdb;
+}
+#tab table{
+  width: 100%;
+
+}
+
+.deletebutton{
+  width: 70%;
+}

@@ -1,0 +1,415 @@
+*{
+  border-collapse: collapse;
+margin: 0;
+padding: 0 !important;
+}
+#tab::-webkit-scrollbar {
+width: 5px;
+height: 2px;         /* width of the entire scrollbar */
+}
+#tab tr{
+font-weight: 100px;
+transition: all 1s;
+}
+#tab tr:hover{
+background-color: rgba(177, 100, 100, 0.658);
+font-weight: bolder;
+}
+#tab::-webkit-scrollbar-track {
+background: orange;
+opacity: 0.3;     /* color of the tracking area */
+}
+
+#tab::-webkit-scrollbar-thumb {
+background-color: rgb(65, 65, 82);    /* color of the scroll thumb */
+border-radius: 10px;       /* roundness of the scroll thumb */
+height: 2px;
+}
+
+#tab table,td,th{
+border: 1px solid green;
+border-collapse: collapse;
+color: rgb(30, 63, 30);
+}
+th{
+  background-color: #b2dfdb;
+}
+#tab table{
+  width: 100%;
+
+}
+.buttonimg{
+width: 76px;
+
+transition: all 0.3s;
+}
+.buttonimg:hover{
+cursor: pointer;
+width:74px ;
+
+}
+.addbtn{
+width: 101.34px;
+transition: all 0.3s;
+}
+.addbtn:hover{
+cursor: pointer;
+width:99px ;
+
+}
+.savebtn
+{
+width: 127px;
+transition: all 0.3s;
+height: 40px;
+}
+.savebtn:hover{
+cursor: pointer;
+width:125px ;
+
+}
+.cancelbtn{
+width: 126px;
+height: 40px;
+transition: all 0.3s;
+}
+.cancelbtn:hover{
+cursor: pointer;
+width:124px ;
+
+}
+
+.formc{
+/* width: 100%; */
+margin: 0;
+/* border: 1px solid rgba(46, 56, 46, 0.466); */
+height:   255px;
+
+}
+.container {
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto auto;
+grid-template-rows: 20px 40% 40% auto auto;
+grid-gap: 2px;
+/* background-color: #2196F3; */
+padding: 5px;
+height: 90%;
+
+}
+.container > .cen {
+display: flex;
+justify-content: center;
+align-items: center;
+/* background-color: rgba(255, 255, 255, 0.8); */
+text-align: center;
+/* padding: 10px 0; */
+font-size: 30px;
+
+}
+
+.item1{
+grid-row-start: 1;
+grid-row-end: 1;
+
+grid-column-start: 1;
+grid-column-end: 10;
+}
+.item2{
+grid-row-start: 2;
+grid-row-end: 2;
+
+grid-column-start: 1;
+grid-column-end: 3;
+}
+.item3{
+grid-row-start: 2;
+grid-row-end: 2;
+
+grid-column-start: 3;
+grid-column-end: 6;
+}
+
+.item4{
+grid-row-start: 3;
+grid-row-end: 3;
+
+grid-column-start: 1;
+grid-column-end: 3;
+}
+.item5{
+grid-row-start: 3;
+grid-row-end: 3;
+
+grid-column-start: 3;
+grid-column-end: 6;
+}
+.asidec{
+grid-row-start: 2;
+grid-row-end: 7;
+grid-column-start: 6;
+grid-column-end: 10;
+
+
+
+}
+.containerB{
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto auto;
+height: 100%;
+/* grid-gap: 10px; */
+/* background-color: red; */
+/* padding: 10px; */
+}
+
+.item11 {
+grid-row-start: 1;
+grid-row-end: 4;
+display: flex;
+justify-content: flex-end;
+padding: 10px;
+}
+.item22 {
+grid-row-start: 4;
+grid-row-end: 6;
+padding-left: 20px;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+.itemson{
+grid-row-start: 6;
+grid-row-end: 7;
+
+grid-column-start: 1;
+grid-column-end: 6;
+}
+input[type="text"]
+{
+width: 300px;
+height: 4vh;
+font-size: 2rem;
+}
+
+
+.fieldempty{
+text-align: center;
+font-size: 20px;
+background-color: rgba(148, 34, 34, 0.644);
+}
+
+.successsaved{
+text-align: center;
+font-size: 20px;
+background-color: rgba(34, 148, 62, 0.644);
+}
+
+
+
+@media (min-width: 280px) and (max-width: 480px) {
+*{
+  /* white-space: nowrap; */
+  font-size: 10px !important;
+padding: 0 !important;
+}
+  /* CSS */
+  input[type="text"]
+{
+width: 80% !important;
+height: 4vh;
+font-size: 2rem;
+margin-left: 3%;
+
+}
+legend{
+  margin-left: 3%;
+}
+.formc{
+  width: 100%;
+
+}
+.icon{
+  width: 60% !important;
+}
+
+.savebtn
+{
+width: 40%;
+transition: all 0.3s;
+height: 30px;
+}
+.savebtn:hover{
+cursor: pointer;
+width:35% ;
+
+}
+.cancelbtn{
+width: 40%;
+height: 30px;
+transition: all 0.3s;
+}
+.cancelbtn:hover{
+cursor: pointer;
+width:35% ;
+
+}
+
+
+}
+
+
+
+/* 786 */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* CSS */
+
+
+*{
+  /* white-space: nowrap; */
+  font-size: 10px !important;
+/* padding: 0 !important; */
+}
+  /* CSS */
+  input[type="text"]
+{
+width: 200px;
+height: 4vh;
+font-size: 2rem;
+
+}
+.formc{
+  width: 100%;
+}
+.icon{
+  width: 50% !important;
+  position: relative;
+  right: 20px;
+}
+
+.savebtn
+{
+width: 40%;
+transition: all 0.3s;
+height: 30px;
+}
+.savebtn:hover{
+cursor: pointer;
+width:35% ;
+
+}
+.cancelbtn{
+width: 40%;
+height: 30px;
+transition: all 0.3s;
+}
+.cancelbtn:hover{
+cursor: pointer;
+width:35% ;
+
+}
+}
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  *{
+    /* white-space: nowrap; */
+    font-size: 15px !important;
+  padding: 0 !important;
+  }
+    /* CSS */
+    input[type="text"]
+  {
+  width: 90%;
+  height: 4vh;
+  font-size: 2rem;
+
+  }
+  .formc{
+    width: 100%;
+  }
+  .icon{
+    width: 50% !important;
+    position: relative;
+    right: 20%;
+  }
+
+  .savebtn
+  {
+  width: 45%;
+  transition: all 0.3s;
+  height: 30px;
+  }
+  .savebtn:hover{
+  cursor: pointer;
+  width:40% ;
+
+  }
+  .cancelbtn{
+  width: 45%;
+  height: 30px;
+  transition: all 0.3s;
+  }
+  .cancelbtn:hover{
+  cursor: pointer;
+  width:40% ;
+
+  }
+
+}
+
+
+
+@media (max-width: 300px)
+{
+
+  *{
+    /* white-space: nowrap; */
+    font-size: 12px !important;
+  padding: 0 !important;
+  }
+    /* CSS */
+    input[type="text"]
+  {
+  width: 70%;
+  height: 4vh;
+  font-size: 2rem;
+
+  }
+  .formc{
+    width: 100%;
+  }
+  .icon{
+    width: 50% !important;
+    position: relative;
+    right: 20px;
+  }
+
+  .savebtn
+  {
+  width: 45%;
+  transition: all 0.3s;
+  height: 30px;
+  }
+  .savebtn:hover{
+  cursor: pointer;
+  width:40% ;
+
+  }
+  .cancelbtn{
+  width: 45%;
+  height: 30px;
+  transition: all 0.3s;
+  }
+  .cancelbtn:hover{
+  cursor: pointer;
+  width:40% ;
+
+  }
+
+}

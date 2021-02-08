@@ -1,0 +1,7 @@
+{
+  "/**": {
+      "target": "https://javason-303214.uc.r.appspot.com",
+      "secure": false,
+      "changeOrigin":true
+  }
+}

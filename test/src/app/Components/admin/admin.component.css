@@ -1,0 +1,643 @@
+*{
+  border-collapse: collapse;
+margin: 0;
+box-sizing: border-box;
+overflow: auto !important;
+}
+#tab{
+ height: 150px;
+ overflow: auto;
+}
+#tab::-webkit-scrollbar {
+width: 5px;
+height: 2px;         /* width of the entire scrollbar */
+}
+.buttonimg{
+  width: 76px;
+
+  transition: all 0.3s;
+}
+.buttonimg:hover{
+cursor: pointer;
+width:74px ;
+
+}
+#tab tr{
+font-weight: 100px;
+transition: all 1s;
+}
+#tab tr:hover{
+background-color: rgba(177, 100, 100, 0.658);
+font-weight: bolder;
+}
+#tab::-webkit-scrollbar-track {
+background: orange;
+opacity: 0.3;     /* color of the tracking area */
+}
+
+#tab::-webkit-scrollbar-thumb {
+background-color: rgb(65, 65, 82);    /* color of the scroll thumb */
+border-radius: 10px;       /* roundness of the scroll thumb */
+height: 2px;
+}
+
+#tab table,td,th{
+border: 1px solid green;
+border-collapse: collapse;
+color: rgb(30, 63, 30);
+}
+th{
+  background-color: rgba(0, 92, 128, 0.733);
+}
+#tab table{
+  width: 100%;
+
+}
+
+
+.firstcontainer{
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: 250px;
+  /* grid-gap: 10px; */
+  /* background-color: #2196F3; */
+  align-content: center;
+
+}
+
+
+.firstcontainer .items {
+  /* border: 1px solid blue; */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 30px;
+  align-items: center;
+  align-content: center;
+}
+
+.secondgrid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  /* grid-gap: 10px; */
+  /* background-color:red; */
+  /* align-content: center; */
+ align-items: center;
+}
+fieldset{
+  width: 100%;
+}
+.secondgrid>div{
+  /* border: 1px solid blue; */
+  /* background-color:red; */
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 30px;
+  width: 100%;
+  height: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.secondgrid .item1{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+}
+
+.secondgrid .item2{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.secondgrid .item3{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.secondgrid .item4{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.verticalyc{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: coral; */
+}
+
+
+input[type=text]{
+width: 100%;
+height: 30px;
+font-size: 50%;
+
+}
+
+
+
+.rightcontainer{
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: 200px 50px;
+  /* grid-gap: 10px; */
+  /* background-color:blue; */
+  align-content: center;
+
+}
+
+.rightcontainer .item1{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding-right: 1%; */
+}
+
+.rightcontainer .item2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+/* padding-right: 1%; */
+}
+
+
+.usernamec{
+  font-size: 40%;
+  text-align: left;
+  width: 100%;
+}
+
+
+.adminicon{
+  width:40%;
+}
+.saveandcancelbutton{
+  width: 30%;
+}
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  /* CSS */
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  /* CSS */
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* CSS */
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  /* CSS */
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* CSS */
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+*{
+
+white-space: nowrap !important;
+/* overflow-x: hidden !important; */
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* CSS */
+
+
+
+  *{
+    border-collapse: collapse;
+  margin: 0;
+  box-sizing: border-box;
+  font-size:10px !important;
+  white-space: nowrap !important;
+  /* overflow-x: hidden !important; */
+  }
+  #tab{
+   height: 150px;
+   overflow: auto;
+  }
+  #tab::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;         /* width of the entire scrollbar */
+  }
+  .buttonimg{
+    width: 100px !important;
+
+    transition: all 0.3s;
+  }
+  .buttonimg:hover{
+  cursor: pointer;
+  width:74px ;
+
+  }
+  #tab tr{
+  font-weight: 100px;
+  transition: all 1s;
+  }
+  #tab tr:hover{
+  background-color: rgba(177, 100, 100, 0.658);
+  font-weight: bolder;
+  }
+  #tab::-webkit-scrollbar-track {
+  background: orange;
+  opacity: 0.3;     /* color of the tracking area */
+  }
+
+  #tab::-webkit-scrollbar-thumb {
+  background-color: rgb(65, 65, 82);    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+  height: 2px;
+  }
+
+  #tab table,td,th{
+  border: 1px solid green;
+  border-collapse: collapse;
+  color: rgb(30, 63, 30);
+  }
+  th{
+    background-color: rgba(0, 92, 128, 0.733);
+  }
+  #tab table{
+    width: 100%;
+
+  }
+
+
+  .firstcontainer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px;
+    /* grid-gap: 10px; */
+    /* background-color: #2196F3; */
+    align-content: center;
+
+  }
+
+
+  .firstcontainer .items {
+    /* border: 1px solid blue; */
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    /* padding: 20px 0; */
+    font-size: 30px;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .secondgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    /* grid-gap: 10px; */
+    /* background-color:red; */
+    /* align-content: center; */
+   align-items: center;
+  }
+  fieldset{
+    width: 100%;
+  }
+  .secondgrid>div{
+    /* border: 1px solid blue; */
+    /* background-color:red; */
+    text-align: center;
+    /* padding: 20px 0; */
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .secondgrid .item1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+  }
+
+  .secondgrid .item2{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .secondgrid .item3{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  .secondgrid .item4{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .verticalyc{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: coral; */
+  }
+
+
+  input[type=text]{
+  width: 100%;
+  height: 30px;
+  font-size: 50%;
+
+  }
+
+
+
+  .rightcontainer{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: 200px 50px;
+    /* grid-gap: 10px; */
+    /* background-color:blue; */
+    align-content: center;
+
+  }
+
+  .rightcontainer .item1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    /* padding-right: 1%; */
+  }
+
+  .rightcontainer .item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /* padding-right: 1%; */
+  }
+
+  .addbuttonc{
+    width: 30%;
+  }
+  .deletebutton{
+width: 40%;
+  }
+
+}
+
+
+
+
+@media(max-width: 300px)
+{
+
+*{
+  border-collapse: collapse;
+margin: 0;
+box-sizing: border-box;
+font-size:10px !important;
+white-space: nowrap !important;
+/* overflow-x: hidden !important; */
+}
+#tab{
+ height: 150px;
+ overflow: auto;
+}
+#tab::-webkit-scrollbar {
+width: 5px;
+height: 2px;         /* width of the entire scrollbar */
+}
+.buttonimg{
+  width: 100px !important;
+
+  transition: all 0.3s;
+}
+.buttonimg:hover{
+cursor: pointer;
+width:74px ;
+
+}
+#tab tr{
+font-weight: 100px;
+transition: all 1s;
+}
+#tab tr:hover{
+background-color: rgba(177, 100, 100, 0.658);
+font-weight: bolder;
+}
+#tab::-webkit-scrollbar-track {
+background: orange;
+opacity: 0.3;     /* color of the tracking area */
+}
+
+#tab::-webkit-scrollbar-thumb {
+background-color: rgb(65, 65, 82);    /* color of the scroll thumb */
+border-radius: 10px;       /* roundness of the scroll thumb */
+height: 2px;
+}
+
+#tab table,td,th{
+border: 1px solid green;
+border-collapse: collapse;
+color: rgb(30, 63, 30);
+}
+th{
+  background-color: rgba(0, 92, 128, 0.733);
+}
+#tab table{
+  width: 100%;
+
+}
+
+
+.firstcontainer{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 250px;
+  /* grid-gap: 10px; */
+  /* background-color: #2196F3; */
+  align-content: center;
+
+}
+
+
+.firstcontainer .items {
+  /* border: 1px solid blue; */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 30px;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.secondgrid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  /* grid-gap: 10px; */
+  /* background-color:red; */
+  /* align-content: center; */
+ align-items: center;
+}
+fieldset{
+  width: 100%;
+}
+.secondgrid>div{
+  /* border: 1px solid blue; */
+  /* background-color:red; */
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 30px;
+  width: 100%;
+  height: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.secondgrid .item1{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+}
+
+.secondgrid .item2{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.secondgrid .item3{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.secondgrid .item4{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.verticalyc{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: coral; */
+}
+
+
+input[type=text]{
+width: 100%;
+height: 30px;
+font-size: 50%;
+
+}
+
+
+
+.rightcontainer{
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: 200px 50px;
+  /* grid-gap: 10px; */
+  /* background-color:blue; */
+  align-content: center;
+
+}
+
+.rightcontainer .item1{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  /* padding-right: 1%; */
+}
+
+.rightcontainer .item2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/* padding-right: 1%; */
+}
+
+.addbuttonc{
+  width: 30%;
+}
+.deletebutton{
+width: 40%;
+}
+}
+
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+

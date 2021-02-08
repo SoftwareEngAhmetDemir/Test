@@ -1,0 +1,98 @@
+<h3 style="color:#b2dfdb;">| Teacher</h3>
+
+<div id="tab" *ngIf="teacherp else loading">
+
+<app-table [obj]="teacherp" [deleteserve]="'deleteTeacher'" ></app-table>
+</div>
+
+<ng-template #loading>
+  <h1 style="margin: 200px;">Loading...</h1>
+</ng-template>
+
+<div>
+  <img src="assets/images/teacher/add.png" alt="" class="addbtn" height="auto" (click)="add()">
+</div>
+
+<fieldset style="height: 260px;" *ngIf="open">
+  <legend>Add Teacher</legend>
+
+<div class="grid-container">
+
+
+<div class="grid-item leftside">
+  <div class="leftsideitem">
+
+    <fieldset style="border:none">
+      <legend style="text-align: left;font-size: 18px;">First Name</legend>
+      <input type="text" name="" id="" [(ngModel)]="firstName">
+    </fieldset>
+
+  </div>
+  <div class="leftsideitem">
+    <fieldset style="border:none">
+      <legend style="text-align: left;font-size: 18px;">Last Name</legend>
+      <input type="text" name="" id="" [(ngModel)]="lastName">
+    </fieldset>
+  </div>
+  <div class="leftsideitem">
+    <fieldset style="border:none">
+      <legend style="text-align: left;font-size: 18px;">Phone Number</legend>
+      <input type="text" name="" id="" [(ngModel)]="phone">
+    </fieldset>
+  </div>
+
+  <div class="leftsideitem">
+    <fieldset style="border:none">
+      <legend style="text-align: left;font-size: 18px;">Email</legend>
+      <input type="text" name="" id="" [(ngModel)]="email">
+    </fieldset>
+  </div>
+  <div class="leftsideitem">
+    <fieldset style="border:none">
+      <legend style="text-align: left;font-size: 18px;">Adress</legend>
+      <input type="text" name="" id="" [(ngModel)]="adress">
+    </fieldset>
+  </div>
+  <div class="leftsideitem">
+    <fieldset style="border:none">
+      <legend style="text-align: left;font-size: 18px;">Class</legend>
+      <input type="text" name="" id="" [(ngModel)]="klass">
+    </fieldset>
+  </div>
+
+  <div class="leftsideitem">
+    <fieldset style="border:none">
+      <legend style="text-align: left;font-size: 18px;">Material</legend>
+      <input type="text" name="" id="" [(ngModel)]="mat">
+    </fieldset>
+  </div>
+  <div class="leftsideitem son">
+    <div class="fieldempty" *ngIf="emptyb">All Fields are important</div>
+      <div class="successsaved" *ngIf="savedb">Your Data are added</div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="grid-item">
+  <div class="secondside">
+<div class="item1">
+  <img src="assets/images/teacher/teacher.png" alt="" class="icon">
+</div>
+<div class="item2">
+  <img src="assets/images/teacher/save.png" alt="" class="savebtn" (click)="save()">
+  <img src="assets/images/teacher/cancel.png" alt="" class="cancelbtn" (click)="cancelf()">
+</div>
+  </div>
+
+
+</div>
+
+
+</div>
+
+
+</fieldset>

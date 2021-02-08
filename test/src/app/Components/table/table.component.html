@@ -1,0 +1,20 @@
+<!-- {{obj|json}} -->
+<div *ngIf="obj;else empty">
+<table style="width: 90%;">
+
+  <tr>
+<th *ngFor="let p of props">{{p}}</th>
+<th *ngIf="obj;else empty">Action</th>
+
+  </tr>
+  <tr *ngFor="let i of obj;let ind=index" >
+    <td *ngFor="let p of props">{{i[p]}}</td>
+    <td style="text-align: center;">
+      <img src="/assets/images/parents/delete.png" alt="" class="buttonimg deletebutton" (click)="deletef(i,ind)">
+    </td>
+  </tr>
+</table>
+</div>
+<ng-template #empty>
+  <h1 style="text-align: center; background-color: green;opacity: 0.8;color: white;">Table is Empty</h1>
+  </ng-template>
