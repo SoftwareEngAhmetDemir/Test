@@ -35,8 +35,8 @@ export class LoggaurdGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-console.log('route : ')
-      console.log(this.router.url)
+// console.log('route : ')
+//       console.log(this.router.url)
 // if(this.router.url!=='/'){
 return  this.get_res().then(s=>{
   if(s===true)

@@ -10,8 +10,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Injectable()
 export class MyinterceptorInterceptor implements HttpInterceptor {
-
-  constructor(private router:Router) {}
+defaulttoken:any;
+  constructor(private router:Router,private route:ActivatedRoute) {
+    this.defaulttoken = localStorage.getItem('token');
+  }
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<any>> {
     let tokereq = request.clone({
@@ -19,7 +21,10 @@ setHeaders:{
   Authorized:`${localStorage.getItem('token')}`
 }
     });
-    if(!!!localStorage.getItem("token")){ // if user is not auth
+    console.log( this.router.url)
+    if(!!!localStorage.getItem("token")|| this.defaulttoken!==localStorage.getItem('token')
+    &&this.router.url!=='/login'){ // if user is not auth
+      // window.alert('User Is Not Auth');
  this.router.navigate(['/login']);
     }
     return next.handle(tokereq);
